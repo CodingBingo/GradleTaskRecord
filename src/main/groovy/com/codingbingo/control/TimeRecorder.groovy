@@ -56,9 +56,9 @@ class TimeRecorder implements TaskExecutionListener, BuildListener{
             def finalStr = "$outStr $taskInfo.path ($taskInfo.time ms)"
 
             if (taskInfo.isSuccess == true){
-                finalStr = finalStr + " " + '\033[40;32m' + "[ Success ]" + '\033[0m'
+                finalStr = finalStr + " " + '\033[32m' + "[ Success ]" + '\033[0m'
             }else{
-                finalStr = finalStr + " " + '\033[40;31m' + "[ Failure ]" + '\033[0m'
+                finalStr = finalStr + " " + '\033[31m' + "[ Failure ]" + '\033[0m'
             }
 
             if (percent == maxPercent || percent >= 30){
