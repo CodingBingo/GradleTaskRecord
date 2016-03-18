@@ -4,6 +4,15 @@ This is a plugin for gradle user who want to have a clearly look on the time spe
 
 ![Alt Text](https://github.com/CodingBingo/gradletaskrecord/raw/master/img/result.png)
 
+
+# Usage
+If you want to use this.
+
+1、With Gradle
+```gradle
+  compile 'com.codingbingo.library:gradletaskrecord:1.0.0'
+```
+
 ---
 # License
 ```license
