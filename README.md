@@ -10,7 +10,21 @@ If you want to use this.
 
 1、With Gradle
 ```gradle
-  compile 'com.codingbingo.library:gradletaskrecord:1.0.0'
+  buildscript {
+      repositories {
+          jcenter()
+          maven(){
+              url 'https://dl.bintray.com/codingbingo/maven'
+          }
+      }
+      dependencies {
+          classpath 'com.codingbingo.library:gradletaskrecord:1.0.0'
+          // NOTE: Do not place your application dependencies here; they belong
+          // in the individual module build.gradle files
+      }
+  }
+
+  apply plugin: 'com.codingbingo.gradletaskrecord'
 ```
 
 ---
